@@ -193,3 +193,9 @@ print("Horizontal Stacking of a4 and b4:\n", x)
 #vertical stacking
 y=np.vstack((a4, b4))  # Vertical stacking of a4 and b4
 print("Vertical Stacking of a4 and b4:\n", y)
+
+#splitting
+a5=np.arange(12).reshape(3, 4)
+b5=np.arange(12, 24).reshape(3, 4)
+x_split=np.hsplit(a5, 2)  # Horizontal split of a5 into 2 equal parts
+print("Horizontal Split of a5 into 2 equal parts:\n", x_split)
