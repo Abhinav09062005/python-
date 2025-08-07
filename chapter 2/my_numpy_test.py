@@ -147,3 +147,41 @@ print(b[::2,::3])  # Slicing with step size
 print (c[:,1,:] )
 
 print(b[::2,])
+
+print(b[1,::3])
+print (b[0:2,::3])
+
+d= np.arange(27).reshape(3,3,3)
+print("3D Array d:\n", d)
+
+print (d[1])
+print(d[::2])
+
+print (d[0,1,:])
+
+print (d[1,:,1])
+print (d[2,1:3,1:3])
+print (d[::2,0,::2])
+
+#iteration
+
+print (a)
+print (b)
+print (c)
+
+for i in b:
+    print(i)
+
+for i in c:
+    print(i)
+
+for i in np.nditer(c):
+    print (i)
+
+    #transpose
+print("Original Array b:\n", b)
+print("Transposed Array b:\n", b.T)  # Transpose of b
+
+#ravel
+print("Ravelled Array b:", b.ravel())  # Flatten the array 0ne D aaray dedega
+
