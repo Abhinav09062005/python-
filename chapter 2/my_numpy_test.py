@@ -185,3 +185,11 @@ print("Transposed Array b:\n", b.T)  # Transpose of b
 #ravel
 print("Ravelled Array b:", b.ravel())  # Flatten the array 0ne D aaray dedega
 
+#horizontal stacking
+a4=np.arange(12).reshape(3, 4)
+b4=np.arange(12, 24).reshape(3, 4)  
+x=np.hstack((a4, b4))  # Horizontal stacking of a4 and b4
+print("Horizontal Stacking of a4 and b4:\n", x)
+#vertical stacking
+y=np.vstack((a4, b4))  # Vertical stacking of a4 and b4
+print("Vertical Stacking of a4 and b4:\n", y)
