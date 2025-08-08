@@ -53,3 +53,7 @@ print(a[:,[0,2,3]]) #columns
 #boolean indexing
 b=np.random.randint(1,100,24).reshape(6,4)
 print("Random Array a:\n", b)
+print([b>50])  # Elements greater than 50
+print(b[b>50])  # Elements greater than 50 in a flat array
+
+print(b[b%2==0])
