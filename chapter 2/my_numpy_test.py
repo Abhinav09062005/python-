@@ -236,9 +236,26 @@ print("Array x:\n", x)
 print("Array y:\n", y)
 print("Broadcasted Addition of x and y:\n", x + y)  # Broadcasting addition
 
-x1=np.arange(12).reshape(3, 4)
-y1=np.arange(3)
-print("Array x1:\n", x1)
-print("Array y1:\n", y1)
-print("Broadcasted Addition of x1 and y1:\n", x1 + y1)  # Broadcasting addition not possible
+# x1=np.arange(12).reshape(3, 4)
+# y1=np.arange(3)
+# print("Array x1:\n", x1)
+# print("Array y1:\n", y1)
+# print("Broadcasted Addition of x1 and y1:\n", x1 + y1)  # Broadcasting addition not possible
+
+
+d=np.arange(3).reshape(1,3)
+e=np.arange(4).reshape(4,1)
+
+print("Array d:\n", d)
+print("Array e:\n", e)
+print("Broadcasted Addition of d and e:\n", d + e)  # Broadcasting addition
+
+f=np.arange(12).reshape(3,4)
+g=np.arnage(12).reshape(4,3)
+#issme nhi hoga kyuki badne ke liye 1 nhi h
+
+h=np.arange(16).reshape(4,4)
+j=np.arange(4).reshape(2,2)
+# issme v nhi hoga kyuki badne ke liye 1 nhi h
+# streched nhi hoga
 
