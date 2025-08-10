@@ -199,3 +199,46 @@ a5=np.arange(12).reshape(3, 4)
 b5=np.arange(12, 24).reshape(3, 4)
 x_split=np.hsplit(a5, 2)  # Horizontal split of a5 into 2 equal parts
 print("Horizontal Split of a5 into 2 equal parts:\n", x_split)
+
+
+#broadcasting
+
+# the term broadcastign describes 
+# how numpy treats arrays with different shapes during arithemetic operations
+# the smaller array is "broadcast" across the larger
+# array so that they have compatible shapes
+
+
+#same shape
+a1=np.arange(12).reshape(3, 4)
+b1=np.arange(12, 24).reshape(3, 4)
+print("Array a1:\n", a1)
+print("Array b1:\n", b1)
+
+
+#diff shape
+#broadcasting rules
+#1 make the two arrays have the same number of dimensions
+# if the numbers of dimensions of the two arrays are different, add new dimension
+#with the size 1 to the head of the array with the smaller dimensions
+
+#2 make each dimensions of the two arrays the same size
+# if the sizes of the two dimensions are different,
+# the size of the dimension of the smaller array must be 1
+# if the size of the dimension of the smaller array is not 1, an error will be raised
+# if the size of the dimension of the smaller array is 1, it will be stretched
+# to match the size of the larger array
+
+
+x=np.arange(12).reshape(4,3)
+y=np.arange(3)
+print("Array x:\n", x)
+print("Array y:\n", y)
+print("Broadcasted Addition of x and y:\n", x + y)  # Broadcasting addition
+
+x1=np.arange(12).reshape(3, 4)
+y1=np.arange(3)
+print("Array x1:\n", x1)
+print("Array y1:\n", y1)
+print("Broadcasted Addition of x1 and y1:\n", x1 + y1)  # Broadcasting addition not possible
+

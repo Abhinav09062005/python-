@@ -57,3 +57,7 @@ print([b>50])  # Elements greater than 50
 print(b[b>50])  # Elements greater than 50 in a flat array
 
 print(b[b%2==0])
+
+print(b[(b%2==0) & (b>50)])  # Elements that are even and greater than 50
+
+
