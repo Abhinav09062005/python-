@@ -79,3 +79,12 @@ plt.xlabel("X-axis")
 plt.ylabel("log(X)")
 plt.grid()
 plt.show()
+
+# sigmoid 
+b=np.linspace(-10, 10, 100)
+plt.plot(sigmoid(b))
+plt.title("Sigmoid Function")
+plt.xlabel("X-axis")
+plt.ylabel("Sigmoid(X)")
+plt.grid()
+plt.show()
