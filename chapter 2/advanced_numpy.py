@@ -17,3 +17,14 @@ print("Array with zeros:", zeros_arr)
 a=np.arange(12)
 print("Sum of array a:", np.sum(a))
 
+#sigmoid
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+# Example usage
+x = np.array([1, 2, 3])
+print("Sigmoid of x:", sigmoid(x))
+
+
+#mean square error
+def mean_square_error(y_true, y_pred):
+    return np.mean((y_true - y_pred) ** 2)
