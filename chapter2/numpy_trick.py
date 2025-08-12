@@ -51,7 +51,7 @@ print(e.shape)
 #npp.where
 #tthe numpy where() function returns the indices of elements in an input array where the given condition is satisfied
 
-g=np.array([10, 20, 30, 40, 50, 60])
+g=np.array([10, 200, 30, 40, 50, 60,70,80])
 print('indices of elements greater than 30:', np.where(g > 30))  # find indices where elements are greater than 30
 # find all indices with value greater than 50
 print('indices of elements greater than 50:', np.where(g > 50))  # find indices where elements are greater than 50
@@ -59,3 +59,14 @@ print('indices of elements greater than 50:', np.where(g > 50))  # find indices 
 #replace all indices with value greater than 50
 g[np.where(g > 50)] = 100
 print('g after replacing values greater than 50:', g)  # print g after replacing values greater than 50
+
+#np.argmax
+# the numpy.argmax() function returns indices of the max element of the array in a particular axis
+
+print('index of max element in g:', np.argmax(g))  # index of max element in g
+
+#same np.argmin
+
+#np.cumsum
+# numpy.cumsum() function is used when we want to compute the cumulative sum of array elements over a given axis
+
