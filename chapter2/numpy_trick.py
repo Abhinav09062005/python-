@@ -136,3 +136,23 @@ print('intersection of n and m:', np.intersect1d(n, m))  # intersection of n and
 print('difference of n and m:', np.setdiff1d(n, m))  # difference of n and m
 print('symmetric difference of n and m:', np.setxor1d(n, m))  # common wala ko hata dega baki de dega symmetric difference of n and m
 print('elements of n in m:', np.in1d(n, m))  # check if elements of n are in m
+
+
+#np.swapaxes
+# the numpy.swapaxes() function is used to interchange two axes of an array
+arr6 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print('original array arr6:\n', arr6)  # original array
+print('array after swapping axes 0 and 1:\n', np.swapaxes(arr6, 0, 1))  # swap axes 0 and 1 of arr6
+
+# np.clip
+# the numpy.clip() function is used to limit the values in an array to a specified range
+arr7 = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9])
+print('original array arr7:', arr7)  # original array
+print('array after clipping values between 3 and 7:', np.clip(arr7,2,7))  # clip values in arr7 between 3 and 7
+
+
+# np.uniform
+# the numpy.uniform() function is used to generate random numbers from a uniform distribution over a specified range
+arr8 = np.random.uniform(1, 10, 5)  # generate 5 random numbers from a uniform distribution between 1 and 10
+print('random numbers from uniform distribution:', arr8)  # print random numbers from uniform distribution
+
