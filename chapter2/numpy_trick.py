@@ -46,3 +46,16 @@ print('expanded dimensions of e:', np.expand_dims(e, axis=0))  # expand dimensio
 print('expanded dimensions of e:', np.expand_dims(e, axis=1))  # expand
 print(e.shape)
 
+
+
+#npp.where
+#tthe numpy where() function returns the indices of elements in an input array where the given condition is satisfied
+
+g=np.array([10, 20, 30, 40, 50, 60])
+print('indices of elements greater than 30:', np.where(g > 30))  # find indices where elements are greater than 30
+# find all indices with value greater than 50
+print('indices of elements greater than 50:', np.where(g > 50))  # find indices where elements are greater than 50
+
+#replace all indices with value greater than 50
+g[np.where(g > 50)] = 100
+print('g after replacing values greater than 50:', g)  # print g after replacing values greater than 50
