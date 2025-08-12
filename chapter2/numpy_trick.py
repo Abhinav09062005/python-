@@ -134,5 +134,5 @@ m=np.array([4, 5, 6, 7, 8])
 print('union of n and m:', np.union1d(n, m))  # union of n and m
 print('intersection of n and m:', np.intersect1d(n, m))  # intersection of n and m
 print('difference of n and m:', np.setdiff1d(n, m))  # difference of n and m
-print('symmetric difference of n and m:', np.setxor1d(n, m))  # symmetric difference of n and m
+print('symmetric difference of n and m:', np.setxor1d(n, m))  # common wala ko hata dega baki de dega symmetric difference of n and m
 print('elements of n in m:', np.in1d(n, m))  # check if elements of n are in m
