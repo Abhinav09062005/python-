@@ -73,7 +73,7 @@ plt.grid()
 plt.show()
 
 l=np.linspace(-10, 10, 100)
-plt.plot(x*np.log(l))
+plt.plot(x*(np.log(l)))
 plt.title("Logarithmic Function")
 plt.xlabel("X-axis")    
 plt.ylabel("log(X)")
