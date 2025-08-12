@@ -70,3 +70,20 @@ print('index of max element in g:', np.argmax(g))  # index of max element in g
 #np.cumsum
 # numpy.cumsum() function is used when we want to compute the cumulative sum of array elements over a given axis
 
+print('cumulative sum of g:', np.cumsum(g))  # cumulative sum of g
+# sb ko add krte jayga
+
+# same cumprod kaam krega multipy ke liye
+
+#np.percentile
+# numpy.percentile() function used to compute the nth percentile of the given data along the specified axis
+
+h=np.array([1,2,3,4,5,6,7,8,9,10])
+print('50th percentile of h:', np.percentile(h, 100))  # 50th percentile (median) of h
+print('90th percentile of h:', np.percentile(h, 0))  # 90th percentile of h
+
+
+
+#np.histogram
+# numpy.histogram() function is used to compute the histogram of a set of data
+#numpy has a built in numpy histogram() function which represent the frequency of the data distribution in a graphical form
