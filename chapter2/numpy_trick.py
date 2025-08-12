@@ -87,3 +87,52 @@ print('90th percentile of h:', np.percentile(h, 0))  # 90th percentile of h
 #np.histogram
 # numpy.histogram() function is used to compute the histogram of a set of data
 #numpy has a built in numpy histogram() function which represent the frequency of the data distribution in a graphical form
+
+
+print('histogram of h:', np.histogram(h, bins=[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100]))  # histogram of h with specified bins
+print(np.histogram(h,bins=[0,50,100]))
+
+#np.corrcoef
+# return pearson products-moment correlation coefficients
+
+salary=np.array([2000,4000,25000,35000,6000])
+experience=np.array([1,2,3,4,5])
+
+print(np.corrcoef(salary, experience))  # correlation coefficient between salary and experience
+
+
+#np.isin
+# with the help of numpy.isin() method we can see that one array having values are checked in a different numpy array having different element with different sizes
+arr1 = np.array([1, 2, 3, 4, 5])
+arr2 = np.array([3, 4, 5, 6, 7])
+print('elements of arr1 in arr2:', np.isin(arr1, arr2))  # check if elements of arr1 are in arr2
+
+#np.flip
+# the numpy.flip() function reverse the order of the array elements along the specified axis preserving the shape of the array
+arr3=np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print('original array arr3:\n', arr3)  # original array
+print('flipped array along axis 0:\n', np.flip(arr3, axis=0))  # flip arr3 along axis 0
+print('flipped array along axis 1:\n', np.flip(arr3, axis=1))  # flip arr3 along axis 1
+
+
+#np.put
+# the numpy.put() function replaces specific elements of an array with given values of p_array array indexed works on flattened array
+arr4 = np.array([1, 2, 3, 4, 5])
+np.put(arr4, [0, 2], [10, 30])  # replace elements at index 0 and 2 with 10 and 30
+print('array after np.put:', arr4)  # print arr4 after np.put permanent chnages krta h
+
+#np.delete
+# the numpy.delete() function is used to delete elements from an array along a specified axis
+arr5 = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+print('original array arr5:\n', arr5)  # original array
+print('array after deleting row 1:\n', np.delete(arr5, 1, axis=0))  # delete row at index 1
+
+# set function
+
+n=np.array([1, 2, 3, 4, 5])
+m=np.array([4, 5, 6, 7, 8])
+print('union of n and m:', np.union1d(n, m))  # union of n and m
+print('intersection of n and m:', np.intersect1d(n, m))  # intersection of n and m
+print('difference of n and m:', np.setdiff1d(n, m))  # difference of n and m
+print('symmetric difference of n and m:', np.setxor1d(n, m))  # symmetric difference of n and m
+print('elements of n in m:', np.in1d(n, m))  # check if elements of n are in m
