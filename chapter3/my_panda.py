@@ -28,3 +28,35 @@ print(marks_series)
 marks_series.name = 'Marks of Students'
 print(marks_series)
 
+
+# series from dict
+marks={
+    'Maths': 67,
+    'Physics': 57,
+    'Chemistry': 89,
+    'Biology': 90,
+    'English': 78
+}
+marks_series_from_dict = pd.Series(marks, name='Marks of Students')
+print(marks_series_from_dict)
+
+# series attribute
+
+# size
+print("Size of the series:", marks_series.size)
+
+# dtype
+print("Data type of the series:", marks_series.dtype)
+
+# index
+print("Index of the series:", marks_series.index)
+
+#is_unique
+print("Is the index unique?", marks_series.index.is_unique)
+
+#values
+print("Values of the series:", marks_series.values)
+
+#key
+print("Key of the series:", marks_series.keys())
+
