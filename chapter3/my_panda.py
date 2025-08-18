@@ -65,3 +65,6 @@ import sys
 print(sys.path)
 # ye fiile ka path find krke dega
 print(sys.modules)
+
+a = 'Geeks'
+print(sys.getrefcount(a))
