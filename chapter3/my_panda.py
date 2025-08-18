@@ -61,5 +61,7 @@ print("Key of the series:", marks_series.keys())
 
 print ("ghjvg",marks_series.index)
 
-
-
+import sys
+print(sys.path)
+# ye fiile ka path find krke dega
+print(sys.modules)
