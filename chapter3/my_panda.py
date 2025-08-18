@@ -4,7 +4,6 @@ import numpy as np
 import pandas as pd
 
 #strings
-
 country=['India', 'USA', 'China', 'Japan', 'Germany']
 print(pd.Series(country))
 
@@ -39,7 +38,6 @@ marks={
 }
 marks_series_from_dict = pd.Series(marks, name='Marks of Students')
 print(marks_series_from_dict)
-
 # series attribute
 
 # size
@@ -59,6 +57,7 @@ print("Values of the series:", marks_series.values)
 
 #key
 print("Key of the series:", marks_series.keys())
+
 
 print ("ghjvg",marks_series.index)
 
