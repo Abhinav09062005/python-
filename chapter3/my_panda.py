@@ -68,3 +68,7 @@ print(sys.modules)
 
 a = 'Geeks'
 print(sys.getrefcount(a))
+
+x=pd.Series([12,13,14,15,16,35,34,76])
+print(x[0])
+
