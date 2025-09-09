@@ -14,4 +14,9 @@ mvc model view controller
  ther is no seperate controller and complete application is based on model view and template
 
  django use mvt ARCHITECTURE
- 
+
+
+
+ static file vs template
+
+ static file 
